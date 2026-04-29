@@ -21,7 +21,7 @@ inputs:
     description: 'Django secret key to startup'
     required: true
   DJANGO_SECRET_KEY_PROD:
-    description: 'Django secret key'
+    description: 'the secret key for django startup'
     required: false
 runs:
   using: 'docker'
