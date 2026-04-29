@@ -1,24 +1,24 @@
-name: 'Terraformer'
-description: 'blarg'
-author: 'b'
+name: 'Terraformer container actions'
+description: 'Terraform action demonstrations'
+author: 'nereydacastro'
 inputs:
   ARM_CLIENT_ID:
-    description: 'd'
+    description: 'Azure client id'
     required: true
   ARM_CLIENT_SECRET:
-    description: 'd'
+    description: 'Azure client secret'
     required: true
   ARM_SUBSCRIPTION_ID:
-    description: 'd'
+    description: 'Azure subrition ID'
     required: true
   ARM_TENANT_ID:
-    description: 'd'
+    description: 'Azure tenant ID'
     required: true
   STATE_KEY:
-    description: 'd'
+    description: 'Personal identification'
     required: true
   TF_STAGE:
-    description: 'd'
+    description: 'Django secret key to start'
     required: true
 runs:
   using: 'docker'
