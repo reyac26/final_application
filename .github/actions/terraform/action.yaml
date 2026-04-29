@@ -9,7 +9,7 @@ inputs:
     description: 'Azure client secret'
     required: true
   ARM_SUBSCRIPTION_ID:
-    description: 'Azure subrition ID'
+    description: 'Azure subcription ID'
     required: true
   ARM_TENANT_ID:
     description: 'Azure tenant ID'
