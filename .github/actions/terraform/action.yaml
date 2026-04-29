@@ -1,4 +1,4 @@
-name: 'Terraformer container actions'
+name: 'Terraform container actions'
 description: 'Terraform action demonstrations'
 author: 'nereydacastro'
 inputs:
