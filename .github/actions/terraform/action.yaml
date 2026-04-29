@@ -18,8 +18,11 @@ inputs:
     description: 'Personal identification'
     required: true
   TF_STAGE:
-    description: 'Django secret key to start'
+    description: 'Django secret key to startup'
     required: true
+  DJANGO_SECRET_KEY_PROD:
+    description: 'Django secret key'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
