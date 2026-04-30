@@ -43,7 +43,7 @@ jobs:
           path: sbom.json
           compression-level: 0
 
-  terraform-stage1:
+  terraform-stage-1:
     needs: [build-and-curl, sbom-scan-and-test]
     runs-on: ubuntu-latest
     steps:
@@ -61,7 +61,7 @@ jobs:
           TF_STAGE: 'stage1'
 
   build-tag-push:
-    needs: terraform-stage1
+    needs: terraform-stage-1
     runs-on: ubuntu-latest
     steps:
     - name: get_code
@@ -109,7 +109,7 @@ jobs:
         curl -f http://$prefix.centralus.azurecontainer.io:8000
 
   terraform-stage-3:
-      needs: terraform-stage-2
+      needs: pre-eval
       runs-on: ubuntu-latest
       steps:
       - name: get-code
